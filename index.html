@@ -1,57 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="author" content="Kolkov B.">
-    <meta name="description" content="Amnesia - launcher for modded Minecraft.">
-    <meta name="keywords" content="Minecraft, Amnesia, amnesia, ,launcher Amnesia, modded Minecraft, minecraft">
-    <title>Amnesia</title>
+  <title>Amnesia</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="author" content="Kolkov B.">
+  <meta name="description" content="Amnesia - launcher for modded Minecraft.">
+  <meta name="keywords" content="Minecraft, Amnesia, amnesia, ,launcher Amnesia, modded Minecraft, minecraft">
+  <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<nav>
-  <ul>
-    <li><a href="index.html">Home</a></li>
-    <li><a href="shop.html">Shop</a></li>
-    <li><a href="rules.html">Rules</a></li>
-    <li><a href="forum.html">Forum</a></li>
-    <li class="servers_nav">
-      <a href="server-list.html">Servers</a>
-      <ul>
-        <li><a href="server-list.html">Server 1</a></li>
-        <li><a href="server-list.html">Server 2</a></li>
-        <li><a href="server-list.html">Server 3</a></li>
-      </ul>
-    </li>
-    <li><a href="about.html">About</a></li>
-    <li><a>Play</a></li>
-  </ul>
-</nav>
 <header>
-  <h1>Amnesia</h1>
+<div class="logo">
+  <a href="index.html"><h1>Amnesia</h1></a>
+</div>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="servers-dropdown">
+          <a href="server-list.html">Servers</a>
+          <ul class="servers-dropdown-content">
+            <li><a href="server-list.html">Server 1</a></li>
+            <li><a href="server-list.html">Server 2</a></li>
+            <li><a href="server-list.html">Server 3</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><button id="play_button">Play</button></li>
+      </ul>
+    </nav>
 </header>
-<aside>
-  <h2>Shop</h2>
-</aside>
+
 <main>
   <div id="leftSide">
-    <section>
-      <h1>Welcome to Amnesia</h1>
-      <article>Project Amnesia ready to start</article>
-    </section>
+    <div id="server_cards">
+      <section>
+        <h2>Avaliable Servers</h2>
+      </section>
+    </div>
+    <div id="news">
+      <section>
+        <h1>Welcome to Amnesia</h1>
+        <article>Project Amnesia ready to start</article>
+      </section>
+    </div>
+
   </div>
   <div id="rightSide">
     <!--AUTH-->
-    <div id="login_placeholder">
-      <a>LOGIN</a>
-    </div>
-    <div id="login_window">
-      <div id="login_window_form">
-
+    <div id="login">
+      <div id="login_placeholder">
+        <h4>Account</h4>
+        <p>Sign in to access all features</p>
       </div>
-      <div id="login_window_links"></div>
+      <div id="login_window">
+        <div id="login_window_form">
+          <form id="login_form" method="post">
+            <input id="username" name="username" type="text" placeholder="Username" required>
+            <input id="password" name="password" type="password" placeholder="Password" required>
+          </form>
+          <button id="login_button" type="submit">Login</button>
+        </div>
+        <div id="login_window_links">
+          <a href="register.html">Register</a>
+          <a href="forgot-password.html">Forgot Password?</a>
+        </div>
+      </div>
     </div>
+    <div id="monitoring"></div>
   </div>
 </main>
 <footer>

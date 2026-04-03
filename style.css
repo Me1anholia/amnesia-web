@@ -1,0 +1,105 @@
+body{
+    font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    background-color:#1a1a1a;
+}
+header {
+    display: flex;
+    background-color: #2a2a2a;
+    padding-block: 16px;
+    padding-inline: 24px;
+    border-radius: 14px;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1280px;
+}
+.logo {
+    align-self: center;
+    gap: 12px;
+}
+.logo a{
+    text-decoration: none;
+    color: white;
+
+}
+.header-nav {
+    display: flex;
+    align-items: center;
+
+}
+.header-nav-list {
+    display: flex;
+    float: right;
+    gap: 24px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+}
+.header-nav-list a{
+    text-decoration: none;
+    color: oklch(87.2% .01 258.338)
+}
+.header-nav-list a:hover{
+    color: white;
+}
+#play_button{
+    border: none;
+    text-decoration: none;
+    background-color: oklch(62.7% .194 149.214);
+    border-radius: 8px;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    padding: 14px 40px;
+}
+#play_button:hover{
+    background-color: oklch(52.7% .154 150.069);
+}
+
+.servers-dropdown:hover .servers-dropdown-content {
+    display: block;
+}
+.servers-dropdown-content {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    width: max-content !important;
+    height: max-content !important;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+.servers-dropdown-content a:hover {
+    background-color: oklch(62.7% .194 149.214);
+}
+
+
+#leftSide{
+ float: left;
+ width: 50%;
+ padding: 4px;
+}
+main:after{
+    content: "";
+    display: table;
+    clear: both;
+}
+@media screen and (max-width: 1024px) {
+    #leftSide{
+        width: 100%;
+    }
+}
+#rightSide{
+
+}
+#login{
+    padding-top: 24px;
+    padding-inline: 24px;
+    gap: 6px;
+    grid-template-rows: min-content;
+
+
+}
