@@ -12,6 +12,7 @@
 </head>
 <body>
 <header>
+  <div class="header-container">
 <div class="logo">
   <a href="index.html"><h1>Amnesia</h1></a>
 </div>
@@ -29,12 +30,15 @@
         <li><a href="rules.html">Rules</a></li>
         <li><a href="forum.html">Forum</a></li>
         <li><a href="about.html">About</a></li>
-        <li><button id="play_button">Play</button></li>
+
       </ul>
+      <button id="play_button">Play</button>
     </nav>
+  </div>
 </header>
 
 <main>
+  <!--LEFTSIDE-->
   <div id="leftSide">
     <div id="server_cards">
       <section>
@@ -49,10 +53,11 @@
     </div>
 
   </div>
+  <!--RIGHT SIDE-->
   <div id="rightSide">
     <!--AUTH-->
-    <div id="login">
-      <div id="login_placeholder">
+    <div class="card" id="login">
+      <div class="placeholder" id="login_placeholder">
         <h4>Account</h4>
         <p>Sign in to access all features</p>
       </div>
@@ -70,7 +75,12 @@
         </div>
       </div>
     </div>
-    <div id="monitoring"></div>
+    <div class="card" id="monitoring">
+      <div class="placeholder">
+        <h4>Monitoring</h4>
+        <p>Real time server status</p>
+      </div>
+    </div>
   </div>
 </main>
 <footer>
