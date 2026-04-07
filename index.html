@@ -39,22 +39,32 @@
 
 <main>
   <!--LEFTSIDE-->
-  <div id="leftSide">
-    <div id="server_cards">
-      <section>
-        <h2>Avaliable Servers</h2>
-      </section>
-    </div>
-    <div id="news">
-      <section>
-        <h1>Welcome to Amnesia</h1>
-        <article>Project Amnesia ready to start</article>
+  <div id="left_side">
+    <section>
+      <h2>Avaliable Servers</h2>
+      <div id="server_list">
+        <div class="card">
+          <div class="placeholder">
+            <h4>Skyblock</h4>
+            <p>Start from nothing, create everything</p>
+          </div>
+          <div class="card-content"></div>
+        </div>
+      </div>
+
+    </section>
+    <section>
+      <h2>Latest News</h2>
+
+          <h1>Welcome to Amnesia</h1>
+          <article>Project Amnesia ready to start</article>
+
       </section>
     </div>
 
   </div>
   <!--RIGHT SIDE-->
-  <div id="rightSide">
+  <div id="right_side">
     <!--AUTH-->
     <div class="card" id="login">
       <div class="placeholder" id="login_placeholder">
@@ -67,11 +77,11 @@
             <input id="username" name="username" type="text" placeholder="Username" required>
             <input id="password" name="password" type="password" placeholder="Password" required>
           </form>
-          <button id="login_button" type="submit">Login</button>
+          <button id="login_button" type="submit"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path><polyline points="10 17 15 12 10 7"></polyline><line x1="15" x2="3" y1="12" y2="12"></line></svg>Login</button>
         </div>
         <div id="login_window_links">
-          <a href="register.html">Register</a>
-          <a href="forgot-password.html">Forgot Password?</a>
+          <a id="register" href="register.html">Register</a>
+          <a id="forgot_password" href="forgot-password.html">Forgot Password?</a>
         </div>
       </div>
     </div>
