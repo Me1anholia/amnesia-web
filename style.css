@@ -118,7 +118,9 @@ main{
     padding: 4px;
     section{
         box-sizing: border-box;
+        width: 100%;
     }
+
 }
 main:after{
     content: "";
