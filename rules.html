@@ -1,10 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <title>Amnesia</title>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><h1>Amnesia</h1></a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="servers-dropdown">
+                    <a href="server-list.html">Servers</a>
+                    <ul class="servers-dropdown-content">
+                        <li><a href="server-list.html">Server 1</a></li>
+                        <li><a href="server-list.html">Server 2</a></li>
+                        <li><a href="server-list.html">Server 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="about.html">About</a></li>
 
+            </ul>
+            <button id="play_button">Play</button>
+        </nav>
+    </div>
+</header>
+<main>
+        <aside id="sidebar" class="card">
+            <div id="sidebar_container">
+                <h2>RULES</h2>
+                <ul>
+                    <li><a href="#general_policy">GENERAL PROJECT POLICY</a></li>
+                    <li><a href="#section_1">ACCOUNT & SECURITY</a></li>
+                    <li><a href="#section_2">IN-GAME ASSETS & BANS</a></li>
+                    <li><a href="#section_3">CHAT & COMMUNICATION</a></li>
+                    <li><a href="#section_4">REGIONS & BUILDINGS</a></li>
+                    <li><a href="#section_5">PVP & FAIR PLAY</a></li>
+                    <li><a href="#section_6">ECONOMY & EVENTS</a></li>
+                </ul>
+            </div>
+        </aside>
+        <div id="rules" class="card">
+            <h1>PROJECT RULES & GUIDELINES</h1>
+            <div id="general_policy">
+                <h2>GENERAL PROJECT POLICY</h2>
+                <a>The following are strictly prohibited on the project in any form:</a>
+                <ul>
+                    <li> Nazism, fascism, extremism, and any form of discriminatory ideology.</li>
+                    <li> Erotic, immoral, political, or military context.</li>
+                    <li> Mentions of "death groups," calls for self-harm, or threats of real-life violence.</li>
+                    <li> Promotion of psychotropic, narcotic, or nicotine-containing substances.</li>
+                    <li> Profanity (including masked/censored swearing) and insults.</li>
+                    <li> Advertising third-party resources and using a player's real-life data without their consent.</li>
+                </ul>
+            </div>
+            <div id="section_1">
+                <h2>1. ACCOUNT & SECURITY</h2>
+                <ul>
+                    <li>1.1 Agreement: By registering, you agree to the Data Processing Policy and the License Agreement.</li>
+                    <li>1.2 Sharing: Transferring or selling your account to third parties is forbidden.</li>
+                    <li>1.3 Nicknames: Nicknames that violate project policy or impersonate staff (Admin, Moderator, etc.) are prohibited.</li>
+                    <li>1.4 Customization: Skins, capes, and prefixes must remain appropriate and follow general policy.</li>
+                    <li>1.5 Alts: Creating "twink" (alternative) accounts to gain gameplay advantages is prohibited.</li>
+                </ul>
+            </div>
+            <div id="section_2">
+                <h2>2. IN-GAME ASSETS & BANS</h2>
+                <ul>
+                    <li>2.1 RMT: Trading in-game resources for real-world currency or outside values is forbidden.</li>
+                    <li>2.2 Refunds: In-game assets are not refundable upon account block. The service is provided "as is"—resources lost due to bugs, server errors, or player mistakes will not be returned.</li>
+                    <li>2.3 Authority: Staff reserves the right to seize resources or remove regions/warps if necessary for server health.</li>
+                    <li>2.4 Sanctions: Repeated violations may lead to a permanent ban of all associated accounts.</li>
+                </ul>
+            </div>
+            <div id="section_3">
+                <h2>3. CHAT & COMMUNICATION</h2>
+                <ul>
+                    <li>3.1 Chat Cleanliness: No spamming, flooding, or excessive use of Caps Lock (messages where over 50% are capital letters).</li>
+                    <li>3.2 Topics: Discussing cheats, dupe glitches, or critical server exploits in public chat is prohibited.</li>
+                    <li>3.3 Commerce: Commercial messages (buying/selling) are allowed once every 5 minutes. Warp advertisements are allowed once every 10 minutes.</li>
+                    <li>3.4 Staff Interaction: Publicly criticizing or disputing staff actions is prohibited. Use the Complaint Section on the Forum for appeals.</li>
+                </ul>
+            </div>
+            <div id="section_4">
+                <h2>4. REGIONS & BUILDINGS</h2>
+                <ul>
+                    <li>4.1 Responsibility: You are responsible for who you add to your private region.</li>
+                    <li>4.2 Distance: Do not create regions closer than 3 chunks to another player's region without their consent.</li>
+                    <li>4.3 Performance: Buildings that create excessive server load (lag machines) are strictly forbidden.</li>
+                    <li>4.4 Griefing: Intentionally ruining the map's appearance (cobblestone towers, lava casts, etc.) is prohibited.</li>
+                </ul>
+            </div>
+            <div id="section_5">
+                <h2>5. ECONOMY & EVENTS</h2>
+                <ul>
+                    <li>5.1 Fair Combat: Killing a player is only allowed 2 minutes after they have teleported.</li>
+                    <li>5.2 Commands: Using /vanish, /tp, or similar staff-level commands to gain an advantage in combat is forbidden.</li>
+                    <li>5.3 Traps: Creating any form of player traps (e.g., portal traps, death warps) is prohibited.</li>
+                    <li>5.4 Cheating: Using third-party software, modified clients, or storing "duped" items will result in a ban.</li>
+                    <li>5.5 Entity Limits: A maximum of 8 mobs per chunk is allowed to ensure stability.</li>
+                </ul>
+            </div>
+            <div id="section_6">
+                <h2>6. FAIR PLAY</h2>
+                <ul>
+                    <li>6.1 Pricing: Selling items below the established minimum price is forbidden. See Minimum Price List.</li>
+                    <li>6.2 Giveaways: Only basic resources (food, dirt, stone, glass) may be given away for free in large quantities.</li>
+                    <li>6.3 Player Events: Any player-made casinos or high-reward events must be pre-approved by Senior Management.</li>
+
+                </ul>
+            </div>
+        </div>
+</main>
 </body>
 </html>

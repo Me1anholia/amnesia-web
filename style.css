@@ -1,5 +1,9 @@
-body{
+*{
     font-family:ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    color: white;
+}
+
+body{
     background-color: rgb(0, 0, 0);
 }
 header{
@@ -183,6 +187,7 @@ main:after{
         border-style: solid;
         border-width: 1px;
         border-color: #3a3a3a;
+        outline-color: #a1a1a180;
         border-radius: 8px;
     }
     button{
@@ -227,4 +232,40 @@ main:after{
         color: oklch(70.7% .022 261.325);
         cursor: pointer;
     }
+}
+/* RULES.html */
+.rules-container{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    padding-block: 32px;
+    padding-inline: 24px;
+    max-width: 1328px;
+    margin-inline: auto;
+}
+#rules{
+    display: grid;
+    float: right;
+    grid-column: span 2;
+    box-sizing: border-box;
+    width: 100%;
+}
+#sidebar{
+    display: grid;
+    grid-template-rows: repeat(3, minmax(0, 1fr));
+}
+#sidebar_container{
+    display: grid;
+    grid-row: 1;
+    height: max-content;
+
+}
+#sidebar_container > h2{
+    margin: 0;
+    padding: 0;
+    height: 48px;
+}
+#sidebar_container li{
+    list-style: none;
+    padding: 6px;
 }
