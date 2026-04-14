@@ -1,30 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>Amnesia</title>
+    <meta charset="UTF-8">
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
-<nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="shop.html">Shop</a></li>
-        <li><a href="rules.html">Rules</a></li>
-        <li><a href="forum.html">Forum</a></li>
-        <li class="servers_nav">
-            <a href="server-list.html">Servers</a>
-            <ul>
-                <li><a href="server-list.html">Server 1</a></li>
-                <li><a href="server-list.html">Server 2</a></li>
-                <li><a href="server-list.html">Server 3</a></li>
+<header>
+    <div class="header-container">
+        <div class="logo">
+            <a href="index.html"><h1>Amnesia</h1></a>
+        </div>
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="servers-dropdown">
+                    <a href="server-list.html">Servers</a>
+                    <ul class="servers-dropdown-content">
+                        <li><a href="server-list.html">Server 1</a></li>
+                        <li><a href="server-list.html">Server 2</a></li>
+                        <li><a href="server-list.html">Server 3</a></li>
+                    </ul>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="about.html">About</a></li>
+
             </ul>
-        </li>
-        <li><a href="about.html">About</a></li>
-    </ul>
-</nav>
-<h1>About Amnesia</h1>
-<article>
-    About page of project Amnesia
-</article>
+            <button id="play_button">Play</button>
+        </nav>
+    </div>
+</header>
+<main>
+    <div id="main_container">
+        <h3>Frame</h3>
+        <iframe
+            src="https://en.wikipedia.org/wiki/Amnesia"
+            width="100%"
+            height="300"
+            style="border:2px solid #2b2b2b;">
+        </iframe>
+        <h3>Video</h3>
+        <video width="400" controls>
+            <source src="video.mp4" type="video/mp4">
+            <source src="video.ogg" type="video/ogg">
+        </video>
+        <h3>Audio</h3>
+        <audio controls>
+            <source src="nirvana%20-%20come%20as%20you%20are.mp3" type="audio/mpeg">
+
+        </audio>
+    </div>
+</main>
+<!--FOOTER-->
+<footer>
+    <div id="footer-separator"></div>
+    <div id="footer_nav">
+        <nav class="header-nav">
+            <ul class="header-nav-list">
+                <li class="servers-dropdown">
+                    <a href="server-list.html">Servers</a>
+                </li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="rules.html">Rules</a></li>
+                <li><a href="forum.html">Forum</a></li>
+                <li><a href="about.html">About</a></li>
+
+            </ul>
+        </nav>
+    </div>
+    <div id="footer_copyright">
+        <h3>@ 2026 All rights reserved</h3>
+    </div>
+</footer>
 </body>
 </html>

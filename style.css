@@ -233,6 +233,13 @@ main:after{
         cursor: pointer;
     }
 }
+#footer-separator{
+    margin: 15px 10px;
+    border-bottom: 1px #2a2a2a solid;
+}
+#footer_copyright{
+    margin: 15px 10px;
+}
 /* RULES.html */
 .rules-container{
     display: grid;
@@ -268,4 +275,9 @@ main:after{
 #sidebar_container li{
     list-style: none;
     padding: 6px;
+}
+/* ABOUT.html */
+#main_container{
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
 }
