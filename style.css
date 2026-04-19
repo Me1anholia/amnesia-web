@@ -133,11 +133,59 @@ main{
 #left_side{
     grid-column: span 2;
     padding: 4px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
     section{
         box-sizing: border-box;
         width: 100%;
     }
 
+}
+.server-list-item{
+    display: flex;
+    flex-direction: column;
+    gap: 24px !important;
+}
+.server-list-item:hover{
+    border-color: color-mix(in oklab, oklch(72.3% .219 149.579) 50%, transparent);
+}
+.card-content{}
+.status-badge{
+    font-weight: 500;
+    padding-block: 2px;
+    padding-inline: 8px;
+    background-color: #00a63e;
+    border-radius: 8px;
+    gap: 4px;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: fit-content;
+    display: inline-flex;
+}
+.item-header{
+    display: inline-flex;
+    justify-content: space-between;
+}
+.server-visitor{
+    box-sizing: border-box;
+    border: 0 solid;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.news-item{
+    display: flex;
+    flex-direction: column;
+    article{
+        font-size: 16px;
+    }
+}
+.news-item:hover{
+    border-color: color-mix(in oklab, oklch(62.3% .214 259.815) 50%, transparent);
 }
 main:after{
     content: "";
