@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Amnesia</title>
+  <meta charset="UTF-8">
+  <link href="style.css" rel="stylesheet">
+  <script src="script.js"></script>
+</head>
+<body>
+<header>
+  <div class="header-container">
+    <div class="logo">
+      <a href="index.html"><h1>Amnesia</h1></a>
+    </div>
+    <nav class="header-nav">
+      <ul class="header-nav-list">
+        <li class="servers-dropdown">
+          <a href="server-list.html">Servers</a>
+          <ul class="servers-dropdown-content">
+            <li><a href="server_1.html">Server 1</a></li>
+            <li><a href="server-list.html">Server 2</a></li>
+            <li><a href="server-list.html">Server 3</a></li>
+          </ul>
+        </li>
+        <li><a href="shop.html">Shop</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="forum.html">Forum</a></li>
+        <li><a href="about.html">About</a></li>
+
+      </ul>
+      <button id="play_button">Play</button>
+    </nav>
+  </div>
+</header>
+<main>
+  <div id="main_container" class="card">
+    <p>Test text for third</p>
+    <p id="fadeElement">This text may fade out if it works</p>
+    <script>
+      ResizeText('Это текст 40 px',40);
+      startJumpingImg("media/advertisement.jpg");
+      ResizeAllArticles();
+      createTextClock();
+      fadeOutElement('fadeElement');
+
+    </script>
+    <div id="forth"></div>
+  </div>
+</main>
+
+</body>
+</html>
